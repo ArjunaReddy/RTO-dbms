@@ -113,6 +113,6 @@ public class Admin_Login
 		btnLogin.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		btnLogin.setBounds(178, 189, 70, 23);
 		frame.getContentPane().add(btnLogin);
-		//noob
+		
 	}
 }
