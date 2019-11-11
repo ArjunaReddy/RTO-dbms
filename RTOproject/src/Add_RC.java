@@ -1,4 +1,4 @@
-import java.awt.EventQueue;
+import java.awt.EventQueue;//for event queue
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
