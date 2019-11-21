@@ -220,7 +220,7 @@ public class Add_RC
 		JLabel lblNewLabel_1 = new JLabel("New label");
 		lblNewLabel_1.setForeground(Color.WHITE);
 		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic8alter.png"));
+		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\ArjunAmulya\\git\\RTO-dbms\\RTOproject\\images\\pic8alter.png"));
 		lblNewLabel_1.setBounds(0, -1, 1182, 686);
 		frame.getContentPane().add(lblNewLabel_1);
 	}

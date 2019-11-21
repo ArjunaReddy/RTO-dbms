@@ -61,7 +61,7 @@ public class Registrations
 		textArea.setFont(new Font("Monospaced", Font.PLAIN, 22));
 		textArea.setBounds(0, 0, 1182, 552);
 		frame.getContentPane().add(textArea);
-		textArea.setText("Regno\t Engno \t Fuel \t COV \t DOI \t DOE \t Model \t Ownerid\n");
+		textArea.setText("Regno\t Engno \t Fuel \t COV \t DOI \t \tDOE \t\t Model \t Ownerid\n");
 
 		try
         { 
@@ -114,7 +114,7 @@ public class Registrations
 		frame.getContentPane().add(btnPrev);
 		
 		JLabel label = new JLabel("New label");
-		label.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic8.png"));
+		label.setIcon(new ImageIcon("C:\\Users\\ArjunAmulya\\git\\RTO-dbms\\RTOproject\\images\\pic8.png"));
 		label.setBounds(0, 0, 1182, 686);
 		frame.getContentPane().add(label);
 	}

@@ -23,6 +23,7 @@ public class Learning_License
 	private JTextField textField_2;
 	private JTextField textField_3;
 	private JTextField textField_4;
+	private JTextField textField_5;
 
 	/**
 	 * Launch the application.
@@ -66,9 +67,9 @@ public class Learning_License
 
 		JTextArea textArea = new JTextArea();
 		textArea.setFont(new Font("Monospaced", Font.PLAIN, 16));
-		textArea.setBounds(578, 0, 604, 686);
+		textArea.setBounds(506, 0, 678, 686);
 		frame.getContentPane().add(textArea);
-textArea.setText("DL No\tCOV\tDOI\tExpiry Date\tUser_aadhar\n");
+textArea.setText("LL No\tCOV\tDOI\tExpiry Date\tUser_aadhar\tT_Date\n");
 
 		try
         { 
@@ -83,8 +84,8 @@ textArea.setText("DL No\tCOV\tDOI\tExpiry Date\tUser_aadhar\n");
 	            {
 	                pre=textArea.getText();
 	            	String data1 = rs.getString("LLno");String data2 = rs.getString("cov");String data3 = rs.getString("doi");
-	            	String data4 = rs.getString("doe");String data5 = rs.getString("usr_aadhar");
-	            	textArea.setText(pre+data1+"\t"+data2+"\t"+data3+"\t"+data4+"\t"+data5+"\t"+"\n");
+	            	String data4 = rs.getString("doe");String data5 = rs.getString("usr_aadhar");String data6 = rs.getString("T_Date");
+	            	textArea.setText(pre+data1+"\t"+data2+"\t"+data3+"\t"+data4+"\t"+data5+"\t"+data6+"\n");
 
 	            } 
 	            conn.close(); 
@@ -156,6 +157,17 @@ textArea.setText("DL No\tCOV\tDOI\tExpiry Date\tUser_aadhar\n");
 		textField_4.setBounds(190, 429, 217, 39);
 		frame.getContentPane().add(textField_4);
 		textField_4.setColumns(10);
+		
+		JLabel lblTestDate = new JLabel("Test Date :");
+		lblTestDate.setFont(new Font("Sylfaen", Font.BOLD, 20));
+		lblTestDate.setForeground(Color.WHITE);
+		lblTestDate.setBounds(54, 499, 124, 38);
+		frame.getContentPane().add(lblTestDate);
+		
+		textField_5 = new JTextField();
+		textField_5.setBounds(190, 500, 217, 39);
+		frame.getContentPane().add(textField_5);
+		textField_5.setColumns(10);
 
 		JButton btnSubmit = new JButton("Submit");
 		btnSubmit.setFont(new Font("Sylfaen", Font.PLAIN, 23));
@@ -175,7 +187,7 @@ textArea.setText("DL No\tCOV\tDOI\tExpiry Date\tUser_aadhar\n");
 				            Statement stmt = conn.createStatement();
 				            String q1 = "insert into learninglicence values('" +textField.getText() +  
 				                                    "','" + textField_1.getText()+"','"+textField_2.getText()+
-				                                    "','"+textField_3.getText()+"',"+textField_4.getText()+")";
+				                                    "','"+textField_3.getText()+"',"+textField_4.getText()+",'"+textField_5.getText()+"')";
 				            int a=stmt.executeUpdate(q1);
 
 				            Statement stmt1 = conn.createStatement();
@@ -197,7 +209,7 @@ textArea.setText("DL No\tCOV\tDOI\tExpiry Date\tUser_aadhar\n");
 			        }
 			}
 		});
-		btnSubmit.setBounds(222, 502, 117, 38);
+		btnSubmit.setBounds(224, 564, 117, 38);
 		frame.getContentPane().add(btnSubmit);
 
 		JButton btnPrev = new JButton("prev");
@@ -211,10 +223,14 @@ textArea.setText("DL No\tCOV\tDOI\tExpiry Date\tUser_aadhar\n");
 		btnPrev.setBounds(0, 647, 83, 39);
 		frame.getContentPane().add(btnPrev);
 		
+
+		
+		
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic8 - Copy (2).png"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\ArjunAmulya\\git\\RTO-dbms\\RTOproject\\images\\pic8 - Copy (2).png"));
 		lblNewLabel.setBounds(0, 0, 1182, 686);
 		frame.getContentPane().add(lblNewLabel);
+		
 	}
 
 }

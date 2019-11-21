@@ -62,7 +62,7 @@ public class Transfer
 		textArea.setFont(new Font("Monospaced", Font.PLAIN, 23));
 		textArea.setBounds(0, 0, 1200, 557);
 		frame.getContentPane().add(textArea);
-textArea.setText("Regno\tEngno\tFuel\tCOV\tDOI\tDOE\tModel\tOwnerid\n");
+textArea.setText("t_no\tb_id\ts_id\tRegno\tFuel\tt_date\tCOV\n");
 
 		try
         { 
@@ -115,7 +115,7 @@ textArea.setText("Regno\tEngno\tFuel\tCOV\tDOI\tDOE\tModel\tOwnerid\n");
 		frame.getContentPane().add(btnPrev);
 		
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic8.png"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\ArjunAmulya\\git\\RTO-dbms\\RTOproject\\images\\pic8.png"));
 		lblNewLabel.setBounds(0, 0, 1182, 686);
 		frame.getContentPane().add(lblNewLabel);
 	}
