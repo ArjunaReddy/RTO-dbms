@@ -50,12 +50,12 @@ public class Controls
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
-		
+
 		JLabel lblWelcomeAdmin = new JLabel("Welcome Admin");
 		lblWelcomeAdmin.setFont(new Font("Tahoma", Font.BOLD, 20));
 		lblWelcomeAdmin.setBounds(136, 11, 224, 28);
 		frame.getContentPane().add(lblWelcomeAdmin);
-		
+
 		JButton btnUsers = new JButton("Users");
 		btnUsers.addActionListener(new ActionListener()
 		{
@@ -67,7 +67,7 @@ public class Controls
 		});
 		btnUsers.setBounds(167, 106, 112, 23);
 		frame.getContentPane().add(btnUsers);
-		
+
 		JButton btnRegistrations = new JButton("Registrations");
 		btnRegistrations.addActionListener(new ActionListener()
 		{
@@ -79,7 +79,7 @@ public class Controls
 		});
 		btnRegistrations.setBounds(167, 151, 112, 23);
 		frame.getContentPane().add(btnRegistrations);
-		
+
 		JButton btnTransfers = new JButton("Transfers");
 		btnTransfers.addActionListener(new ActionListener() 
 		{
@@ -91,7 +91,7 @@ public class Controls
 		});
 		btnTransfers.setBounds(167, 195, 112, 23);
 		frame.getContentPane().add(btnTransfers);
-		
+
 		JButton btnPrev = new JButton("prev");
 		btnPrev.addActionListener(new ActionListener()
 		{
