@@ -9,6 +9,9 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.awt.event.ActionEvent;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import java.awt.Font;
 
 public class Transfer 
 {
@@ -51,12 +54,13 @@ public class Transfer
 	private void initialize()
 	{
 		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
+		frame.setBounds(100, 100, 1200, 733);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 
 		JTextArea textArea = new JTextArea();
-		textArea.setBounds(0, 0, 434, 208);
+		textArea.setFont(new Font("Monospaced", Font.PLAIN, 23));
+		textArea.setBounds(0, 0, 1200, 557);
 		frame.getContentPane().add(textArea);
 textArea.setText("Regno\tEngno\tFuel\tCOV\tDOI\tDOE\tModel\tOwnerid\n");
 
@@ -86,6 +90,7 @@ textArea.setText("Regno\tEngno\tFuel\tCOV\tDOI\tDOE\tModel\tOwnerid\n");
         }
 
 		JButton btnAddTransfer = new JButton("Add Transfer");
+		btnAddTransfer.setFont(new Font("Sylfaen", Font.PLAIN, 23));
 		btnAddTransfer.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent arg0) 
@@ -94,10 +99,11 @@ textArea.setText("Regno\tEngno\tFuel\tCOV\tDOI\tDOE\tModel\tOwnerid\n");
 				usr.frame.setVisible(true);
 			}
 		});
-		btnAddTransfer.setBounds(172, 219, 102, 23);
+		btnAddTransfer.setBounds(488, 578, 178, 53);
 		frame.getContentPane().add(btnAddTransfer);
 
 		JButton btnPrev = new JButton("prev");
+		btnPrev.setFont(new Font("Sylfaen", Font.PLAIN, 23));
 		btnPrev.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent arg0) 
@@ -105,8 +111,13 @@ textArea.setText("Regno\tEngno\tFuel\tCOV\tDOI\tDOE\tModel\tOwnerid\n");
 				frame.setVisible(false);
 			}
 		});
-		btnPrev.setBounds(0, 228, 59, 25);
+		btnPrev.setBounds(0, 646, 85, 40);
 		frame.getContentPane().add(btnPrev);
+		
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic8.png"));
+		lblNewLabel.setBounds(0, 0, 1182, 686);
+		frame.getContentPane().add(lblNewLabel);
 	}
 
 }

@@ -13,7 +13,9 @@ import java.awt.event.ActionEvent;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JTextField;
-import java.sql.Date;  
+import java.sql.Date;
+import java.awt.Color;
+import javax.swing.ImageIcon;  
 
 public class Driving_License {
 
@@ -54,12 +56,13 @@ public class Driving_License {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
+		frame.setBounds(100, 100, 1200, 733);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 
 		JTextArea textArea = new JTextArea();
-		textArea.setBounds(206, 0, 228, 262);
+		textArea.setFont(new Font("Monospaced", Font.PLAIN, 16));
+		textArea.setBounds(566, 0, 616, 686);
 		frame.getContentPane().add(textArea);
 		textArea.setText("DL No\tCOV\tDOI\tExpiry Date\tUser_aadhar\n");
 
@@ -88,56 +91,69 @@ public class Driving_License {
         }
 
 		JLabel lblAddNewUser = new JLabel("Add new DL Information");
-		lblAddNewUser.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		lblAddNewUser.setBounds(10, 11, 200, 24);
+		lblAddNewUser.setForeground(Color.WHITE);
+		lblAddNewUser.setFont(new Font("Bodoni MT Black", Font.PLAIN, 30));
+		lblAddNewUser.setBounds(61, 41, 438, 51);
 		frame.getContentPane().add(lblAddNewUser);
 
 		JLabel lblName = new JLabel("COV :");
-		lblName.setBounds(50, 67, 46, 14);
+		lblName.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblName.setForeground(Color.WHITE);
+		lblName.setBounds(61, 230, 117, 39);
 		frame.getContentPane().add(lblName);
 
 		JLabel lblDlNumber = new JLabel("DL Number: ");
-		lblDlNumber.setBounds(20, 46, 76, 14);
+		lblDlNumber.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblDlNumber.setForeground(Color.WHITE);
+		lblDlNumber.setBounds(61, 161, 117, 39);
 		frame.getContentPane().add(lblDlNumber);
 
 		JLabel lblDoi = new JLabel("DOI :");
-		lblDoi.setBounds(50, 89, 46, 14);
+		lblDoi.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblDoi.setForeground(Color.WHITE);
+		lblDoi.setBounds(61, 295, 117, 39);
 		frame.getContentPane().add(lblDoi);
 
 		JLabel lblExpiryDate = new JLabel("Expiry Date :");
-		lblExpiryDate.setBounds(13, 107, 63, 14);
+		lblExpiryDate.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblExpiryDate.setForeground(Color.WHITE);
+		lblExpiryDate.setBounds(59, 363, 117, 38);
 		frame.getContentPane().add(lblExpiryDate);
 
 		JLabel lblUserId = new JLabel("User ID :");
-		lblUserId.setBounds(30, 128, 46, 14);
+		lblUserId.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblUserId.setForeground(Color.WHITE);
+		lblUserId.setBounds(61, 435, 117, 39);
 		frame.getContentPane().add(lblUserId);
 
 		textField = new JTextField();
-		textField.setBounds(80, 43, 86, 20);
+		textField.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		textField.setBounds(190, 161, 217, 39);
 		frame.getContentPane().add(textField);
 		textField.setColumns(10);
 
 		textField_1 = new JTextField();
-		textField_1.setBounds(80, 64, 86, 20);
+		textField_1.setBounds(190, 230, 217, 39);
 		frame.getContentPane().add(textField_1);
 		textField_1.setColumns(10);
 
 		textField_2 = new JTextField();
-		textField_2.setBounds(80, 86, 86, 20);
+		textField_2.setBounds(188, 298, 222, 39);
 		frame.getContentPane().add(textField_2);
 		textField_2.setColumns(10);
 
 		textField_3 = new JTextField();
-		textField_3.setBounds(80, 104, 86, 20);
+		textField_3.setBounds(188, 366, 219, 38);
 		frame.getContentPane().add(textField_3);
 		textField_3.setColumns(10);
 
 		textField_4 = new JTextField();
-		textField_4.setBounds(80, 125, 86, 20);
+		textField_4.setBounds(190, 429, 217, 39);
 		frame.getContentPane().add(textField_4);
 		textField_4.setColumns(10);
 
 		JButton btnSubmit = new JButton("Submit");
+		btnSubmit.setFont(new Font("Sylfaen", Font.PLAIN, 23));
 		btnSubmit.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
@@ -177,10 +193,11 @@ public class Driving_License {
 			}
 		});
 
-		btnSubmit.setBounds(77, 177, 89, 23);
+		btnSubmit.setBounds(232, 505, 116, 39);
 		frame.getContentPane().add(btnSubmit);
 
 		JButton btnPrev = new JButton("prev");
+		btnPrev.setFont(new Font("Sylfaen", Font.PLAIN, 23));
 		btnPrev.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent arg0) 
@@ -188,8 +205,13 @@ public class Driving_License {
 				frame.setVisible(false);
 			}
 		});
-		btnPrev.setBounds(0, 228, 59, 25);
+		btnPrev.setBounds(0, 647, 84, 39);
 		frame.getContentPane().add(btnPrev);
+		
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic8 - Copy (2).png"));
+		lblNewLabel.setBounds(0, 0, 1182, 686);
+		frame.getContentPane().add(lblNewLabel);
 	}
 
 }

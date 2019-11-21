@@ -9,6 +9,9 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.awt.event.ActionEvent;
+import java.awt.Font;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
 
 public class Registrations
 {
@@ -50,14 +53,15 @@ public class Registrations
 	private void initialize()
 	{
 		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
+		frame.setBounds(100, 100, 1200, 733);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 
 		JTextArea textArea = new JTextArea();
-		textArea.setBounds(0, 0, 434, 200);
+		textArea.setFont(new Font("Monospaced", Font.PLAIN, 22));
+		textArea.setBounds(0, 0, 1182, 552);
 		frame.getContentPane().add(textArea);
-		textArea.setText("Regno\tEngno\tFuel\tCOV\tDOI\tDOE\tModel\tOwnerid\n");
+		textArea.setText("Regno\t Engno \t Fuel \t COV \t DOI \t DOE \t Model \t Ownerid\n");
 
 		try
         { 
@@ -85,6 +89,7 @@ public class Registrations
         }
 
 		JButton btnAddRc = new JButton("Add RC");
+		btnAddRc.setFont(new Font("Sylfaen", Font.PLAIN, 23));
 		btnAddRc.addActionListener(new ActionListener() 
 		{
 			public void actionPerformed(ActionEvent arg0)
@@ -93,10 +98,11 @@ public class Registrations
 				usr.frame.setVisible(true);
 			}
 		});
-		btnAddRc.setBounds(163, 216, 89, 23);
+		btnAddRc.setBounds(517, 574, 134, 58);
 		frame.getContentPane().add(btnAddRc);
 
 		JButton btnPrev = new JButton("prev");
+		btnPrev.setFont(new Font("Sylfaen", Font.PLAIN, 23));
 		btnPrev.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent arg0) 
@@ -104,8 +110,13 @@ public class Registrations
 				frame.setVisible(false);
 			}
 		});
-		btnPrev.setBounds(0, 228, 59, 25);
+		btnPrev.setBounds(0, 648, 82, 38);
 		frame.getContentPane().add(btnPrev);
+		
+		JLabel label = new JLabel("New label");
+		label.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic8.png"));
+		label.setBounds(0, 0, 1182, 686);
+		frame.getContentPane().add(label);
 	}
 
 }

@@ -10,6 +10,8 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
+import java.awt.Color;
+import javax.swing.ImageIcon;
 
 public class Add_User
 {
@@ -58,47 +60,52 @@ public class Add_User
 	{
 		frame = new JFrame();
 		frame.getContentPane().setFont(new Font("Tahoma", Font.PLAIN, 18));
-		frame.setBounds(100, 100, 1265, 739);
+		frame.setBounds(100, 100, 1200, 733);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		JLabel Enter = new JLabel("Enter the User Details");
-		Enter.setBounds(482, 23, 256, 42);
-		Enter.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		Enter.setForeground(Color.WHITE);
+		Enter.setBounds(398, 32, 392, 72);
+		Enter.setFont(new Font("Bodoni MT Black", Font.PLAIN, 32));
 
 		JLabel lblName = new JLabel("First Name :");
+		lblName.setForeground(Color.WHITE);
 		lblName.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblName.setBounds(398, 113, 124, 25);
+		lblName.setBounds(432, 157, 124, 25);
 
 		textField = new JTextField();
-		textField.setBounds(514, 111, 171, 35);
+		textField.setBounds(548, 155, 171, 35);
 		textField.setColumns(10);
 
 		JLabel lblAadharNo = new JLabel("Aadhar No :");
+		lblAadharNo.setForeground(Color.WHITE);
 		lblAadharNo.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblAadharNo.setBounds(398, 310, 116, 25);
+		lblAadharNo.setBounds(432, 354, 116, 25);
 
 		textField_1 = new JTextField();
 		textField_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		textField_1.setBounds(514, 305, 171, 35);
+		textField_1.setBounds(548, 349, 171, 35);
 		textField_1.setColumns(10);
 
 		JLabel lblAddress = new JLabel("Address :");
+		lblAddress.setForeground(Color.WHITE);
 		lblAddress.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblAddress.setBounds(410, 376, 94, 25);
+		lblAddress.setBounds(444, 420, 94, 25);
 
 		textField_2 = new JTextField();
 		textField_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		textField_2.setBounds(514, 371, 171, 35);
+		textField_2.setBounds(548, 415, 171, 35);
 		textField_2.setColumns(10);
 
 		textField_3 = new JTextField();
 		textField_3.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		textField_3.setBounds(514, 440, 171, 35);
+		textField_3.setBounds(548, 484, 171, 35);
 		textField_3.setColumns(10);
 
 		JLabel lblPhoneNo = new JLabel("Phone No:");
+		lblPhoneNo.setForeground(Color.WHITE);
 		lblPhoneNo.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblPhoneNo.setBounds(405, 438, 99, 25);
+		lblPhoneNo.setBounds(439, 482, 99, 25);
 
 		JLabel label = new JLabel("");
 		label.setFont(new Font("Tahoma", Font.PLAIN, 20));
@@ -137,9 +144,10 @@ public class Add_User
 		});
 
 		btnSubmit.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		btnSubmit.setBounds(536, 541, 129, 42);
+		btnSubmit.setBounds(526, 581, 129, 42);
 
 		JButton btnPrev = new JButton("prev");
+		btnPrev.setIcon(null);
 		btnPrev.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		btnPrev.setBounds(0, 643, 106, 49);
 		btnPrev.addActionListener(new ActionListener()
@@ -163,24 +171,31 @@ public class Add_User
 		frame.getContentPane().add(btnPrev);
 
 		textField_4 = new JTextField();
-		textField_4.setBounds(514, 174, 171, 35);
+		textField_4.setBounds(548, 218, 171, 35);
 		frame.getContentPane().add(textField_4);
 		textField_4.setColumns(10);
 
 		JLabel lblMiddleName = new JLabel("Middle Name:");
+		lblMiddleName.setForeground(Color.WHITE);
 		lblMiddleName.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblMiddleName.setBounds(384, 175, 129, 26);
+		lblMiddleName.setBounds(418, 219, 129, 26);
 		frame.getContentPane().add(lblMiddleName);
 
 		textField_5 = new JTextField();
 		textField_5.setColumns(10);
-		textField_5.setBounds(514, 241, 171, 35);
+		textField_5.setBounds(548, 285, 171, 35);
 		frame.getContentPane().add(textField_5);
 
 		JLabel lblLastName = new JLabel("Last Name:");
+		lblLastName.setForeground(Color.WHITE);
 		lblLastName.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblLastName.setBounds(398, 242, 116, 26);
+		lblLastName.setBounds(432, 286, 116, 26);
 		frame.getContentPane().add(lblLastName);
+		
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic8alter.png"));
+		lblNewLabel.setBounds(0, 0, 1182, 686);
+		frame.getContentPane().add(lblNewLabel);
 
 
 	}
