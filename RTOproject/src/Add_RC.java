@@ -100,25 +100,25 @@ public class Add_RC
 		frame.getContentPane().add(lblCov);
 
 		textField = new JTextField();
-		textField.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		textField.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		textField.setBounds(307, 205, 183, 37);
 		frame.getContentPane().add(textField);
 		textField.setColumns(10);
 
 		textField_1 = new JTextField();
-		textField_1.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		textField_1.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		textField_1.setBounds(307, 276, 183, 37);
 		frame.getContentPane().add(textField_1);
 		textField_1.setColumns(10);
 
 		textField_2 = new JTextField();
-		textField_2.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		textField_2.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		textField_2.setBounds(307, 342, 183, 37);
 		frame.getContentPane().add(textField_2);
 		textField_2.setColumns(10);
 
 		textField_3 = new JTextField();
-		textField_3.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		textField_3.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		textField_3.setBounds(307, 411, 183, 40);
 		frame.getContentPane().add(textField_3);
 		textField_3.setColumns(10);
@@ -148,31 +148,31 @@ public class Add_RC
 		frame.getContentPane().add(lblOwnerId);
 
 		textField_4 = new JTextField();
-		textField_4.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		textField_4.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		textField_4.setBounds(704, 205, 185, 37);
 		frame.getContentPane().add(textField_4);
 		textField_4.setColumns(10);
 
 		textField_5 = new JTextField();
-		textField_5.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		textField_5.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		textField_5.setBounds(704, 279, 185, 37);
 		frame.getContentPane().add(textField_5);
 		textField_5.setColumns(10);
 
 		textField_6 = new JTextField();
-		textField_6.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		textField_6.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		textField_6.setBounds(704, 342, 185, 37);
 		frame.getContentPane().add(textField_6);
 		textField_6.setColumns(10);
 
 		textField_7 = new JTextField();
-		textField_7.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		textField_7.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		textField_7.setBounds(704, 414, 185, 37);
 		frame.getContentPane().add(textField_7);
 		textField_7.setColumns(10);
 
 		JButton btnSubmit = new JButton("Submit");
-		btnSubmit.setFont(new Font("Tahoma", Font.PLAIN, 23));
+		btnSubmit.setFont(new Font("Sylfaen", Font.PLAIN, 20));
 		btnSubmit.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
@@ -203,11 +203,11 @@ public class Add_RC
 			        }
 			}
 		});
-		btnSubmit.setBounds(496, 594, 127, 44);
+		btnSubmit.setBounds(513, 576, 127, 44);
 		frame.getContentPane().add(btnSubmit);
 
 		JButton btnPrev = new JButton("prev");
-		btnPrev.setFont(new Font("Tahoma", Font.PLAIN, 23));
+		btnPrev.setFont(new Font("Sylfaen", Font.PLAIN, 20));
 		btnPrev.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent arg0) 
@@ -220,7 +220,7 @@ public class Add_RC
 		JLabel lblNewLabel_1 = new JLabel("New label");
 		lblNewLabel_1.setForeground(Color.WHITE);
 		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\ArjunAmulya\\git\\RTO-dbms\\RTOproject\\images\\pic8alter.png"));
+		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic8alter.png"));
 		lblNewLabel_1.setBounds(0, -1, 1182, 686);
 		frame.getContentPane().add(lblNewLabel_1);
 	}

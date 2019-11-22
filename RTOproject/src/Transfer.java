@@ -59,7 +59,7 @@ public class Transfer
 		frame.getContentPane().setLayout(null);
 
 		JTextArea textArea = new JTextArea();
-		textArea.setFont(new Font("Monospaced", Font.PLAIN, 23));
+		textArea.setFont(new Font("Monospaced", Font.PLAIN, 18));
 		textArea.setBounds(0, 0, 1200, 557);
 		frame.getContentPane().add(textArea);
 textArea.setText("t_no\tb_id\ts_id\tRegno\tFuel\tt_date\tCOV\n");
@@ -90,7 +90,7 @@ textArea.setText("t_no\tb_id\ts_id\tRegno\tFuel\tt_date\tCOV\n");
         }
 
 		JButton btnAddTransfer = new JButton("Add Transfer");
-		btnAddTransfer.setFont(new Font("Sylfaen", Font.PLAIN, 23));
+		btnAddTransfer.setFont(new Font("Sylfaen", Font.PLAIN, 20));
 		btnAddTransfer.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent arg0) 
@@ -99,11 +99,11 @@ textArea.setText("t_no\tb_id\ts_id\tRegno\tFuel\tt_date\tCOV\n");
 				usr.frame.setVisible(true);
 			}
 		});
-		btnAddTransfer.setBounds(488, 578, 178, 53);
+		btnAddTransfer.setBounds(497, 578, 169, 53);
 		frame.getContentPane().add(btnAddTransfer);
 
 		JButton btnPrev = new JButton("prev");
-		btnPrev.setFont(new Font("Sylfaen", Font.PLAIN, 23));
+		btnPrev.setFont(new Font("Sylfaen", Font.PLAIN, 20));
 		btnPrev.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent arg0) 
@@ -115,7 +115,7 @@ textArea.setText("t_no\tb_id\ts_id\tRegno\tFuel\tt_date\tCOV\n");
 		frame.getContentPane().add(btnPrev);
 		
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\ArjunAmulya\\git\\RTO-dbms\\RTOproject\\images\\pic8.png"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic8.png"));
 		lblNewLabel.setBounds(0, 0, 1182, 686);
 		frame.getContentPane().add(lblNewLabel);
 	}

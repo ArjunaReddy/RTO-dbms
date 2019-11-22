@@ -60,7 +60,7 @@ public class Controls
 		frame.getContentPane().add(lblWelcomeAdmin);
 
 		JButton btnUsers = new JButton("Users");
-		btnUsers.setFont(new Font("Sylfaen", Font.BOLD, 22));
+		btnUsers.setFont(new Font("Sylfaen", Font.PLAIN, 20));
 		btnUsers.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent arg0)
@@ -73,7 +73,7 @@ public class Controls
 		frame.getContentPane().add(btnUsers);
 
 		JButton btnRegistrations = new JButton("Registrations");
-		btnRegistrations.setFont(new Font("Sylfaen", Font.BOLD, 22));
+		btnRegistrations.setFont(new Font("Sylfaen", Font.PLAIN, 20));
 		btnRegistrations.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent arg0) 
@@ -86,7 +86,7 @@ public class Controls
 		frame.getContentPane().add(btnRegistrations);
 
 		JButton btnTransfers = new JButton("Transfers");
-		btnTransfers.setFont(new Font("Sylfaen", Font.BOLD, 22));
+		btnTransfers.setFont(new Font("Sylfaen", Font.PLAIN, 20));
 		btnTransfers.addActionListener(new ActionListener() 
 		{
 			public void actionPerformed(ActionEvent arg0)
@@ -99,7 +99,7 @@ public class Controls
 		frame.getContentPane().add(btnTransfers);
 
 		JButton btnPrev = new JButton("prev");
-		btnPrev.setFont(new Font("Sylfaen", Font.BOLD, 22));
+		btnPrev.setFont(new Font("Sylfaen", Font.PLAIN, 20));
 		btnPrev.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent arg0) 
@@ -111,7 +111,7 @@ public class Controls
 		frame.getContentPane().add(btnPrev);
 		
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\ArjunAmulya\\git\\RTO-dbms\\RTOproject\\images\\pic8alter.png"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic8alter.png"));
 		lblNewLabel.setBounds(0, 0, 1182, 686);
 		frame.getContentPane().add(lblNewLabel);
 	}

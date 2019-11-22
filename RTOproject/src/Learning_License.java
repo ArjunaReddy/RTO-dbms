@@ -66,10 +66,10 @@ public class Learning_License
 		frame.getContentPane().setLayout(null);
 
 		JTextArea textArea = new JTextArea();
-		textArea.setFont(new Font("Monospaced", Font.PLAIN, 16));
+		textArea.setFont(new Font("Monospaced", Font.PLAIN, 15));
 		textArea.setBounds(506, 0, 678, 686);
 		frame.getContentPane().add(textArea);
-textArea.setText("LL No\tCOV\tDOI\tExpiry Date\tUser_aadhar\tT_Date\n");
+textArea.setText(" LL_No\t\tCOV\tDOI\tExpiry Date\tT_Date\tUser_aadhar\n");
 
 		try
         { 
@@ -85,7 +85,7 @@ textArea.setText("LL No\tCOV\tDOI\tExpiry Date\tUser_aadhar\tT_Date\n");
 	                pre=textArea.getText();
 	            	String data1 = rs.getString("LLno");String data2 = rs.getString("cov");String data3 = rs.getString("doi");
 	            	String data4 = rs.getString("doe");String data5 = rs.getString("usr_aadhar");String data6 = rs.getString("T_Date");
-	            	textArea.setText(pre+data1+"\t"+data2+"\t"+data3+"\t"+data4+"\t"+data5+"\t"+data6+"\n");
+	            	textArea.setText(pre+" "+data1+"\t\t"+data2+"\t"+data3+"\t"+data4+"\t"+data6+"\t"+data5+"\n");
 
 	            } 
 	            conn.close(); 
@@ -99,78 +99,78 @@ textArea.setText("LL No\tCOV\tDOI\tExpiry Date\tUser_aadhar\tT_Date\n");
 		JLabel lblAddNewUser = new JLabel("Add new LL Information");
 		lblAddNewUser.setForeground(Color.WHITE);
 		lblAddNewUser.setFont(new Font("Bodoni MT Black", Font.PLAIN, 30));
-		lblAddNewUser.setBounds(61, 41, 438, 51);
+		lblAddNewUser.setBounds(56, 13, 438, 51);
 		frame.getContentPane().add(lblAddNewUser);
 
 		JLabel lblName = new JLabel("COV :");
 		lblName.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		lblName.setForeground(Color.WHITE);
-		lblName.setBounds(61, 230, 117, 39);
+		lblName.setBounds(66, 199, 117, 39);
 		frame.getContentPane().add(lblName);
 
 		JLabel lblDlNumber = new JLabel("LL Number: ");
 		lblDlNumber.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		lblDlNumber.setForeground(Color.WHITE);
-		lblDlNumber.setBounds(61, 161, 117, 39);
+		lblDlNumber.setBounds(66, 130, 117, 39);
 		frame.getContentPane().add(lblDlNumber);
 
 		JLabel lblDoi = new JLabel("DOI :");
 		lblDoi.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		lblDoi.setForeground(Color.WHITE);
-		lblDoi.setBounds(61, 295, 117, 39);
+		lblDoi.setBounds(66, 264, 117, 39);
 		frame.getContentPane().add(lblDoi);
 
 		JLabel lblExpiryDate = new JLabel("Expiry Date :");
 		lblExpiryDate.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		lblExpiryDate.setForeground(Color.WHITE);
-		lblExpiryDate.setBounds(59, 363, 117, 38);
+		lblExpiryDate.setBounds(64, 332, 117, 38);
 		frame.getContentPane().add(lblExpiryDate);
 
 		JLabel lblUserId = new JLabel("User ID :");
 		lblUserId.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		lblUserId.setForeground(Color.WHITE);
-		lblUserId.setBounds(61, 435, 117, 39);
+		lblUserId.setBounds(66, 404, 117, 39);
 		frame.getContentPane().add(lblUserId);
 
 		textField = new JTextField();
 		textField.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		textField.setBounds(190, 161, 217, 39);
+		textField.setBounds(195, 130, 217, 39);
 		frame.getContentPane().add(textField);
 		textField.setColumns(10);
 
 		textField_1 = new JTextField();
-		textField_1.setBounds(190, 230, 217, 39);
+		textField_1.setBounds(195, 199, 217, 39);
 		frame.getContentPane().add(textField_1);
 		textField_1.setColumns(10);
 
 		textField_2 = new JTextField();
-		textField_2.setBounds(188, 298, 222, 39);
+		textField_2.setBounds(193, 267, 222, 39);
 		frame.getContentPane().add(textField_2);
 		textField_2.setColumns(10);
 
 		textField_3 = new JTextField();
-		textField_3.setBounds(188, 366, 219, 38);
+		textField_3.setBounds(193, 335, 219, 38);
 		frame.getContentPane().add(textField_3);
 		textField_3.setColumns(10);
 
 		textField_4 = new JTextField();
-		textField_4.setBounds(190, 429, 217, 39);
+		textField_4.setBounds(195, 398, 217, 39);
 		frame.getContentPane().add(textField_4);
 		textField_4.setColumns(10);
 		
 		JLabel lblTestDate = new JLabel("Test Date :");
-		lblTestDate.setFont(new Font("Sylfaen", Font.BOLD, 20));
+		lblTestDate.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		lblTestDate.setForeground(Color.WHITE);
-		lblTestDate.setBounds(54, 499, 124, 38);
+		lblTestDate.setBounds(59, 468, 124, 38);
 		frame.getContentPane().add(lblTestDate);
 		
 		textField_5 = new JTextField();
-		textField_5.setBounds(190, 500, 217, 39);
+		textField_5.setBounds(195, 469, 217, 39);
 		frame.getContentPane().add(textField_5);
 		textField_5.setColumns(10);
 
 		JButton btnSubmit = new JButton("Submit");
-		btnSubmit.setFont(new Font("Sylfaen", Font.PLAIN, 23));
+		btnSubmit.setFont(new Font("Sylfaen", Font.PLAIN, 20));
 		btnSubmit.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
@@ -198,7 +198,7 @@ textArea.setText("LL No\tCOV\tDOI\tExpiry Date\tUser_aadhar\tT_Date\n");
 				            {
 				            	String data1 = rs.getString("LLno");String data2 = rs.getString("cov");String data3 = rs.getString("doi");
 				            	String data4 = rs.getString("doe");String data5 = rs.getString("usr_aadhar");
-				            	textArea.setText(textArea.getText()+data1+"\t"+data2+"\t"+data3+"\t"+data4+"\t"+data5+"\t"+"\n");
+				            	textArea.setText(textArea.getText()+data1+"\t\t"+data2+"\t"+data3+"\t"+data4+"\t"+data5+"\t"+"\n");
 				            } 
 				            conn.close(); 
 			        } 
@@ -209,10 +209,11 @@ textArea.setText("LL No\tCOV\tDOI\tExpiry Date\tUser_aadhar\tT_Date\n");
 			        }
 			}
 		});
-		btnSubmit.setBounds(224, 564, 117, 38);
+		btnSubmit.setBounds(238, 538, 117, 38);
 		frame.getContentPane().add(btnSubmit);
 
 		JButton btnPrev = new JButton("prev");
+		btnPrev.setFont(new Font("Sylfaen", Font.PLAIN, 20));
 		btnPrev.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent arg0) 
@@ -227,7 +228,7 @@ textArea.setText("LL No\tCOV\tDOI\tExpiry Date\tUser_aadhar\tT_Date\n");
 		
 		
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\ArjunAmulya\\git\\RTO-dbms\\RTOproject\\images\\pic8 - Copy (2).png"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic8 - Copy (2).png"));
 		lblNewLabel.setBounds(0, 0, 1182, 686);
 		frame.getContentPane().add(lblNewLabel);
 		

@@ -59,7 +59,7 @@ public class Admin_Login
 		frame.getContentPane().add(lblAdminId);
 		
 		textField = new JTextField();
-		textField.setFont(new Font("Sylfaen", Font.PLAIN, 24));
+		textField.setFont(new Font("Sylfaen", Font.PLAIN, 23));
 		textField.setBounds(521, 178, 240, 49);
 		frame.getContentPane().add(textField);
 		textField.setColumns(10);
@@ -70,13 +70,13 @@ public class Admin_Login
 		frame.getContentPane().add(lblPassword);
 		
 		passwordField = new JPasswordField();
-		passwordField.setFont(new Font("Sylfaen", Font.PLAIN, 24));
+		passwordField.setFont(new Font("Sylfaen", Font.PLAIN, 23));
 		passwordField.setBounds(521, 277, 240, 48);
 		frame.getContentPane().add(passwordField);
 		
 		JButton btnLogin = new JButton("Login");
-		btnLogin.setBackground(Color.DARK_GRAY);
-		btnLogin.setForeground(Color.BLACK);
+		btnLogin.setBackground(new Color(0, 0, 0));
+		btnLogin.setForeground(new Color(255, 255, 255));
 		btnLogin.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
@@ -114,13 +114,13 @@ public class Admin_Login
 				}
 			}
 		});
-		btnLogin.setFont(new Font("Sylfaen", Font.BOLD, 24));
-		btnLogin.setBounds(550, 388, 110, 42);
+		btnLogin.setFont(new Font("Sylfaen", Font.BOLD, 22));
+		btnLogin.setBounds(557, 385, 110, 42);
 		frame.getContentPane().add(btnLogin);
 		
 		JLabel lblNewLabel = new JLabel("New label");
 		lblNewLabel.setForeground(Color.BLACK);
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\ArjunAmulya\\git\\RTO-dbms\\RTOproject\\images\\pic1.jpg"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic1.jpg"));
 		lblNewLabel.setBounds(0, 0, 1182, 686);
 		frame.getContentPane().add(lblNewLabel);
 	}

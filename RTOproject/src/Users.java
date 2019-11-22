@@ -59,8 +59,8 @@ public class Users
 		frame.getContentPane().setLayout(null);
 
 		JTextArea textArea = new JTextArea();
-		textArea.setFont(new Font("Monospaced", Font.PLAIN, 18));
-		textArea.setBounds(0, 0, 1198, 531);
+		textArea.setFont(new Font("Monospaced", Font.PLAIN, 16));
+		textArea.setBounds(0, 0, 1182, 531);
 		frame.getContentPane().add(textArea);
 		try
 		{
@@ -71,20 +71,20 @@ public class Users
             Statement stmt = conn.createStatement();
             String q1="select * from users;";
             ResultSet rs = stmt.executeQuery(q1); 
-            textArea.setText("FName\t\tMName\t\tLName\t\tPhone_No\t\tAddress\t\tAadhar\n");
+            textArea.setText("FName\t\t MName\t\t LName\t\t Phone_No\t\t Address\t\t Aadhar\n");
             while(rs.next())
             {
             	String pre=textArea.getText();
             	String data1 = rs.getString("FName");String data2 = rs.getString("MName");String data3 = rs.getString("LName");
             	String data4 = rs.getString("aadhar");String data5 = rs.getString("address");String data6 = rs.getString("phno");
-            	textArea.setText(pre+data1+"\t\t"+data2+"\t\t"+data3+"\t\t"+data6+"\t\t"+data5+"\t\t"+data4+"\n");
+            	textArea.setText(pre+data1+"\t\t "+data2+"\t\t "+data3+"\t\t "+data6+"\t\t "+data5+"\t\t "+data4+"\n");
             } 
 			conn.close();
 		}
 		catch(Exception e) {};
 
 		JButton btnAddUser = new JButton("Add User");
-		btnAddUser.setFont(new Font("Sylfaen", Font.PLAIN, 23));
+		btnAddUser.setFont(new Font("Sylfaen", Font.PLAIN, 20));
 		btnAddUser.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent arg0)
@@ -93,11 +93,11 @@ public class Users
 				usr.frame.setVisible(true);
 			}
 		});
-		btnAddUser.setBounds(190, 563, 145, 55);
+		btnAddUser.setBounds(190, 563, 136, 48);
 		frame.getContentPane().add(btnAddUser);
 
 		JButton btnDl = new JButton("DL");
-		btnDl.setFont(new Font("Sylfaen", Font.PLAIN, 23));
+		btnDl.setFont(new Font("Sylfaen", Font.PLAIN, 20));
 		btnDl.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent arg0) 
@@ -106,11 +106,11 @@ public class Users
 				usr.frame.setVisible(true);
 			}
 		});
-		btnDl.setBounds(510, 563, 145, 55);
+		btnDl.setBounds(510, 563, 136, 48);
 		frame.getContentPane().add(btnDl);
 
 		JButton btnLl = new JButton("LL");
-		btnLl.setFont(new Font("Sylfaen", Font.PLAIN, 23));
+		btnLl.setFont(new Font("Sylfaen", Font.PLAIN, 20));
 		btnLl.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent arg0)
@@ -119,11 +119,11 @@ public class Users
 				usr.frame.setVisible(true);
 			}
 		});
-		btnLl.setBounds(838, 563, 145, 55);
+		btnLl.setBounds(838, 563, 136, 48);
 		frame.getContentPane().add(btnLl);
 
 		JButton btnPrev = new JButton("prev");
-		btnPrev.setFont(new Font("Sylfaen", Font.PLAIN, 23));
+		btnPrev.setFont(new Font("Sylfaen", Font.PLAIN, 20));
 		btnPrev.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent arg0) 
@@ -135,7 +135,7 @@ public class Users
 		frame.getContentPane().add(btnPrev);
 		
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\ArjunAmulya\\git\\RTO-dbms\\RTOproject\\images\\pic8.png"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic8.png"));
 		lblNewLabel.setBounds(0, 0, 1182, 686);
 		frame.getContentPane().add(lblNewLabel);
 	}

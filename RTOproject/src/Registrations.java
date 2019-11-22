@@ -58,10 +58,10 @@ public class Registrations
 		frame.getContentPane().setLayout(null);
 
 		JTextArea textArea = new JTextArea();
-		textArea.setFont(new Font("Monospaced", Font.PLAIN, 22));
+		textArea.setFont(new Font("Monospaced", Font.PLAIN, 15));
 		textArea.setBounds(0, 0, 1182, 552);
 		frame.getContentPane().add(textArea);
-		textArea.setText("Regno\t Engno \t Fuel \t COV \t DOI \t \tDOE \t\t Model \t Ownerid\n");
+		textArea.setText("Regno\t\tEngno\t\tFuel\t\tCOV\t\tDOI\t\tDOE\t\tModel\t\tOwnerid\n");
 
 		try
         { 
@@ -89,7 +89,7 @@ public class Registrations
         }
 
 		JButton btnAddRc = new JButton("Add RC");
-		btnAddRc.setFont(new Font("Sylfaen", Font.PLAIN, 23));
+		btnAddRc.setFont(new Font("Sylfaen", Font.PLAIN, 20));
 		btnAddRc.addActionListener(new ActionListener() 
 		{
 			public void actionPerformed(ActionEvent arg0)
@@ -102,7 +102,7 @@ public class Registrations
 		frame.getContentPane().add(btnAddRc);
 
 		JButton btnPrev = new JButton("prev");
-		btnPrev.setFont(new Font("Sylfaen", Font.PLAIN, 23));
+		btnPrev.setFont(new Font("Sylfaen", Font.PLAIN, 20));
 		btnPrev.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent arg0) 
@@ -114,7 +114,7 @@ public class Registrations
 		frame.getContentPane().add(btnPrev);
 		
 		JLabel label = new JLabel("New label");
-		label.setIcon(new ImageIcon("C:\\Users\\ArjunAmulya\\git\\RTO-dbms\\RTOproject\\images\\pic8.png"));
+		label.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic8.png"));
 		label.setBounds(0, 0, 1182, 686);
 		frame.getContentPane().add(label);
 	}
