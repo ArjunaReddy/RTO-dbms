@@ -125,7 +125,9 @@ public class Add_User
 		{
 			public void actionPerformed(ActionEvent arg0) 
 			{
+				Users u=new Users();
 				frame.setVisible(false);
+				u.frame.setVisible(true);
 			}
 		});
 		frame.getContentPane().setLayout(null);

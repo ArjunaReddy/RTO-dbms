@@ -66,10 +66,11 @@ public class Learning_License
 		frame.getContentPane().setLayout(null);
 
 		JTextArea textArea = new JTextArea();
+		textArea.setTabSize(12);
 		textArea.setFont(new Font("Monospaced", Font.PLAIN, 15));
-		textArea.setBounds(506, 0, 678, 686);
+		textArea.setBounds(487, 0, 697, 686);
 		frame.getContentPane().add(textArea);
-textArea.setText(" LL_No\t\tCOV\tDOI\tExpiry Date\tT_Date\tUser_aadhar\n");
+textArea.setText(" LL_No\tCOV\tDOI\tExp_Date\t T_Date\tUser_aadhar\n");
 
 		try
         { 
@@ -85,7 +86,7 @@ textArea.setText(" LL_No\t\tCOV\tDOI\tExpiry Date\tT_Date\tUser_aadhar\n");
 	                pre=textArea.getText();
 	            	String data1 = rs.getString("LLno");String data2 = rs.getString("cov");String data3 = rs.getString("doi");
 	            	String data4 = rs.getString("doe");String data5 = rs.getString("usr_aadhar");String data6 = rs.getString("T_Date");
-	            	textArea.setText(pre+" "+data1+"\t\t"+data2+"\t"+data3+"\t"+data4+"\t"+data6+"\t"+data5+"\n");
+	            	textArea.setText(pre+" "+data1+"\t"+data2+"\t"+data3+"\t"+data4+"\t "+data6+"\t"+data5+"\n");
 
 	            } 
 	            conn.close(); 
@@ -198,7 +199,7 @@ textArea.setText(" LL_No\t\tCOV\tDOI\tExpiry Date\tT_Date\tUser_aadhar\n");
 				            {
 				            	String data1 = rs.getString("LLno");String data2 = rs.getString("cov");String data3 = rs.getString("doi");
 				            	String data4 = rs.getString("doe");String data5 = rs.getString("usr_aadhar");
-				            	textArea.setText(textArea.getText()+data1+"\t\t"+data2+"\t"+data3+"\t"+data4+"\t"+data5+"\t"+"\n");
+				            	textArea.setText(textArea.getText()+data1+"\t"+data2+"\t"+data3+"\t"+data4+"\t"+data5+"\t"+"\n");
 				            } 
 				            conn.close(); 
 			        } 
@@ -218,7 +219,9 @@ textArea.setText(" LL_No\t\tCOV\tDOI\tExpiry Date\tT_Date\tUser_aadhar\n");
 		{
 			public void actionPerformed(ActionEvent arg0) 
 			{
+				Users u=new Users();
 				frame.setVisible(false);
+				u.frame.setVisible(true);
 			}
 		});
 		btnPrev.setBounds(0, 647, 83, 39);

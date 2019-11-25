@@ -205,6 +205,8 @@ public class Add_Transfer
 			public void actionPerformed(ActionEvent arg0) 
 			{
 				frame.setVisible(false);
+				Transfer t=new Transfer();
+				t.frame.setVisible(true);
 			}
 		});
 		btnPrev.setBounds(0, 650, 98, 36);

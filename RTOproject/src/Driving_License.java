@@ -15,7 +15,8 @@ import java.awt.Font;
 import javax.swing.JTextField;
 import java.sql.Date;
 import java.awt.Color;
-import javax.swing.ImageIcon;  
+import javax.swing.ImageIcon;
+import javax.swing.UIManager;  
 
 public class Driving_License {
 
@@ -57,7 +58,7 @@ public class Driving_License {
 	            Statement stmt1 = conn.createStatement();
 	            String q2="select * from drivinglicense;";
 	            ResultSet rs = stmt1.executeQuery(q2);
-	            textArea.setText(" DL_No\t\tCOV\tDOI\tExpiry Date\tUser_aadhar\n");
+	            textArea.setText("DL_No\tCOV\tDOI\tExpiry_Date\tUser_aadhar\n");
 	            while(rs.next())
 	            {
 	                pre=textArea.getText();
@@ -85,8 +86,9 @@ public class Driving_License {
 		frame.getContentPane().setLayout(null);
 
 		JTextArea textArea = new JTextArea();
+		textArea.setTabSize(13);
 		textArea.setFont(new Font("Monospaced", Font.PLAIN, 15));
-		textArea.setBounds(578, 11, 604, 675);
+		textArea.setBounds(522, 11, 660, 675);
 		frame.getContentPane().add(textArea);
 	
 		
@@ -95,7 +97,7 @@ public class Driving_License {
 		JLabel lblAddNewUser = new JLabel("Add new DL Information");
 		lblAddNewUser.setForeground(Color.WHITE);
 		lblAddNewUser.setFont(new Font("Bodoni MT Black", Font.PLAIN, 30));
-		lblAddNewUser.setBounds(64, 24, 438, 51);
+		lblAddNewUser.setBounds(32, 24, 408, 51);
 		frame.getContentPane().add(lblAddNewUser);
 
 		JLabel lblDlNumber = new JLabel("DL Number: ");
@@ -183,7 +185,9 @@ public class Driving_License {
 		{
 			public void actionPerformed(ActionEvent arg0) 
 			{
+				Users u=new Users();
 				frame.setVisible(false);
+				u.frame.setVisible(true);
 			}
 		});
 		btnPrev.setBounds(0, 647, 84, 39);
@@ -192,7 +196,7 @@ public class Driving_License {
 	
 		
 		JButton button = new JButton("View All");
-		button.setBackground(Color.WHITE);
+		button.setBackground(UIManager.getColor("Button.background"));
 		button.setFont(new Font("Sylfaen", Font.PLAIN, 20));
 		button.addActionListener(new ActionListener()
 		{

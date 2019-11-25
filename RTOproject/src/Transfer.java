@@ -59,6 +59,7 @@ public class Transfer
 		frame.getContentPane().setLayout(null);
 
 		JTextArea textArea = new JTextArea();
+		textArea.setTabSize(17);
 		textArea.setFont(new Font("Monospaced", Font.PLAIN, 18));
 		textArea.setBounds(0, 0, 1200, 557);
 		frame.getContentPane().add(textArea);
@@ -95,6 +96,7 @@ textArea.setText("t_no\tb_id\ts_id\tRegno\tFuel\tt_date\tCOV\n");
 		{
 			public void actionPerformed(ActionEvent arg0) 
 			{
+				frame.setVisible(false);
 				Add_Transfer usr=new Add_Transfer();
 				usr.frame.setVisible(true);
 			}
@@ -108,6 +110,8 @@ textArea.setText("t_no\tb_id\ts_id\tRegno\tFuel\tt_date\tCOV\n");
 		{
 			public void actionPerformed(ActionEvent arg0) 
 			{
+				Controls c=new Controls();
+				c.frame.setVisible(true);
 				frame.setVisible(false);
 			}
 		});

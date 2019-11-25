@@ -58,10 +58,11 @@ public class Registrations
 		frame.getContentPane().setLayout(null);
 
 		JTextArea textArea = new JTextArea();
+		textArea.setTabSize(15);
 		textArea.setFont(new Font("Monospaced", Font.PLAIN, 15));
 		textArea.setBounds(0, 0, 1182, 552);
 		frame.getContentPane().add(textArea);
-		textArea.setText("Regno\t\tEngno\t\tFuel\t\tCOV\t\tDOI\t\tDOE\t\tModel\t\tOwnerid\n");
+		textArea.setText("Regno\tEngno\tFuel\tCOV\tDOI\tDOE\tModel\tOwnerid\n");
 
 		try
         { 
@@ -94,6 +95,7 @@ public class Registrations
 		{
 			public void actionPerformed(ActionEvent arg0)
 			{
+				frame.setVisible(false);
 				Add_RC usr=new Add_RC();
 				usr.frame.setVisible(true);
 			}
@@ -108,6 +110,9 @@ public class Registrations
 			public void actionPerformed(ActionEvent arg0) 
 			{
 				frame.setVisible(false);
+				Controls c=new Controls();
+				c.frame.setVisible(true);
+				
 			}
 		});
 		btnPrev.setBounds(0, 648, 82, 38);

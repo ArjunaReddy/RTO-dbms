@@ -59,6 +59,8 @@ public class Users
 		frame.getContentPane().setLayout(null);
 
 		JTextArea textArea = new JTextArea();
+		textArea.setTabSize(15);
+		textArea.setWrapStyleWord(true);
 		textArea.setFont(new Font("Monospaced", Font.PLAIN, 16));
 		textArea.setBounds(0, 0, 1182, 531);
 		frame.getContentPane().add(textArea);
@@ -71,13 +73,13 @@ public class Users
             Statement stmt = conn.createStatement();
             String q1="select * from users;";
             ResultSet rs = stmt.executeQuery(q1); 
-            textArea.setText("FName\t\t MName\t\t LName\t\t Phone_No\t\t Address\t\t Aadhar\n");
+            textArea.setText("FName\t  MName\t  LName\t  Phone_No\t  Address\t  Aadhar\n");
             while(rs.next())
             {
             	String pre=textArea.getText();
             	String data1 = rs.getString("FName");String data2 = rs.getString("MName");String data3 = rs.getString("LName");
             	String data4 = rs.getString("aadhar");String data5 = rs.getString("address");String data6 = rs.getString("phno");
-            	textArea.setText(pre+data1+"\t\t "+data2+"\t\t "+data3+"\t\t "+data6+"\t\t "+data5+"\t\t "+data4+"\n");
+            	textArea.setText(pre+data1+"\t  "+data2+"\t  "+data3+"\t  "+data6+"\t  "+data5+"\t  "+data4+"\n");
             } 
 			conn.close();
 		}
@@ -89,6 +91,7 @@ public class Users
 		{
 			public void actionPerformed(ActionEvent arg0)
 			{
+				frame.setVisible(false);
 				Add_User usr=new Add_User();
 				usr.frame.setVisible(true);
 			}
@@ -102,6 +105,7 @@ public class Users
 		{
 			public void actionPerformed(ActionEvent arg0) 
 			{
+				frame.setVisible(false);
 				Driving_License usr=new Driving_License();
 				usr.frame.setVisible(true);
 			}
@@ -115,6 +119,7 @@ public class Users
 		{
 			public void actionPerformed(ActionEvent arg0)
 			{
+				frame.setVisible(false);
 				Learning_License usr=new Learning_License();
 				usr.frame.setVisible(true);
 			}
@@ -128,6 +133,8 @@ public class Users
 		{
 			public void actionPerformed(ActionEvent arg0) 
 			{
+				Controls c=new Controls();
+				c.frame.setVisible(true);
 				frame.setVisible(false);
 			}
 		});

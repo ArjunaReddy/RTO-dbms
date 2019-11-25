@@ -213,6 +213,8 @@ public class Add_RC
 			public void actionPerformed(ActionEvent arg0) 
 			{
 				frame.setVisible(false);
+				Registrations r=new Registrations();
+				r.frame.setVisible(true);
 			}
 		});
 		btnPrev.setBounds(0, 649, 86, 37);

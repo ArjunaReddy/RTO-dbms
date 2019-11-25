@@ -65,6 +65,7 @@ public class Controls
 		{
 			public void actionPerformed(ActionEvent arg0)
 			{
+				frame.setVisible(false);
 				Users usr=new Users();
 				usr.frame.setVisible(true);
 			}
@@ -78,6 +79,7 @@ public class Controls
 		{
 			public void actionPerformed(ActionEvent arg0) 
 			{
+				frame.setVisible(false);
 				Registrations usr=new Registrations();
 				usr.frame.setVisible(true);
 			}
@@ -91,6 +93,7 @@ public class Controls
 		{
 			public void actionPerformed(ActionEvent arg0)
 			{
+				frame.setVisible(false);
 				Transfer usr=new Transfer();
 				usr.frame.setVisible(true);
 			}
@@ -103,8 +106,10 @@ public class Controls
 		btnPrev.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent arg0) 
-			{
+			{	
 				frame.setVisible(false);
+				Admin_Login al=new Admin_Login();
+				al.frame.setVisible(true);
 			}
 		});
 		btnPrev.setBounds(0, 642, 102, 44);

@@ -7,7 +7,7 @@ import java.awt.event.*;
 public class Admin_Login 
 {
 
-	private JFrame frame;
+	JFrame frame;
 	private JTextField textField;
 	private JPasswordField passwordField;
 	private Container c;
@@ -48,9 +48,11 @@ public class Admin_Login
 		c=frame.getContentPane();
 		
 		
-		JLabel lblWelcomeToRto = new JLabel("WELCOME TO RTO MANAGEMENT SYSTEM");
+		JLabel lblWelcomeToRto = new JLabel("WELCOME TO NAMMA RTO");
+		lblWelcomeToRto.setForeground(new Color(0, 0, 0));
+		lblWelcomeToRto.setBackground(Color.LIGHT_GRAY);
 		lblWelcomeToRto.setFont(new Font("Bodoni MT Black", Font.BOLD, 38));
-		lblWelcomeToRto.setBounds(103, 13, 979, 93);
+		lblWelcomeToRto.setBounds(275, 34, 710, 93);
 		c.add(lblWelcomeToRto);
 		
 		JLabel lblAdminId = new JLabel("Admin ID :");
@@ -75,7 +77,7 @@ public class Admin_Login
 		frame.getContentPane().add(passwordField);
 		
 		JButton btnLogin = new JButton("Login");
-		btnLogin.setBackground(new Color(0, 0, 0));
+		btnLogin.setBackground(Color.DARK_GRAY);
 		btnLogin.setForeground(new Color(255, 255, 255));
 		btnLogin.addActionListener(new ActionListener()
 		{
@@ -99,6 +101,7 @@ public class Admin_Login
 				            { 
 				            	JOptionPane.showMessageDialog(frame,"login  successful");
 				                 Controls ab=new Controls();
+				                  frame.setVisible(false);
 				                 ab.frame.setVisible(true);
 				            } 
 				            else
@@ -119,7 +122,7 @@ public class Admin_Login
 		frame.getContentPane().add(btnLogin);
 		
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setForeground(Color.BLACK);
+		lblNewLabel.setForeground(new Color(128, 0, 0));
 		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic1.jpg"));
 		lblNewLabel.setBounds(0, 0, 1182, 686);
 		frame.getContentPane().add(lblNewLabel);
