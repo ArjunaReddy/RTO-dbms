@@ -127,34 +127,38 @@ textArea.setText(" LL_No\tCOV\tDOI\tExp_Date\t T_Date\tUser_aadhar\n");
 		lblExpiryDate.setBounds(64, 332, 117, 38);
 		frame.getContentPane().add(lblExpiryDate);
 
-		JLabel lblUserId = new JLabel("User ID :");
+		JLabel lblUserId = new JLabel("User_aadhar:");
 		lblUserId.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		lblUserId.setForeground(Color.WHITE);
-		lblUserId.setBounds(66, 404, 117, 39);
+		lblUserId.setBounds(56, 404, 127, 39);
 		frame.getContentPane().add(lblUserId);
 
 		textField = new JTextField();
-		textField.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		textField.setFont(new Font("Dialog", Font.PLAIN, 18));
 		textField.setBounds(195, 130, 217, 39);
 		frame.getContentPane().add(textField);
 		textField.setColumns(10);
 
 		textField_1 = new JTextField();
+		textField_1.setFont(new Font("Dialog", Font.PLAIN, 18));
 		textField_1.setBounds(195, 199, 217, 39);
 		frame.getContentPane().add(textField_1);
 		textField_1.setColumns(10);
 
 		textField_2 = new JTextField();
+		textField_2.setFont(new Font("Dialog", Font.PLAIN, 18));
 		textField_2.setBounds(193, 267, 222, 39);
 		frame.getContentPane().add(textField_2);
 		textField_2.setColumns(10);
 
 		textField_3 = new JTextField();
+		textField_3.setFont(new Font("Dialog", Font.PLAIN, 18));
 		textField_3.setBounds(193, 335, 219, 38);
 		frame.getContentPane().add(textField_3);
 		textField_3.setColumns(10);
 
 		textField_4 = new JTextField();
+		textField_4.setFont(new Font("Dialog", Font.PLAIN, 18));
 		textField_4.setBounds(195, 398, 217, 39);
 		frame.getContentPane().add(textField_4);
 		textField_4.setColumns(10);
@@ -166,6 +170,7 @@ textArea.setText(" LL_No\tCOV\tDOI\tExp_Date\t T_Date\tUser_aadhar\n");
 		frame.getContentPane().add(lblTestDate);
 		
 		textField_5 = new JTextField();
+		textField_5.setFont(new Font("Dialog", Font.PLAIN, 18));
 		textField_5.setBounds(195, 469, 217, 39);
 		frame.getContentPane().add(textField_5);
 		textField_5.setColumns(10);
@@ -198,8 +203,8 @@ textArea.setText(" LL_No\tCOV\tDOI\tExp_Date\t T_Date\tUser_aadhar\n");
 				            if(rs.last())
 				            {
 				            	String data1 = rs.getString("LLno");String data2 = rs.getString("cov");String data3 = rs.getString("doi");
-				            	String data4 = rs.getString("doe");String data5 = rs.getString("usr_aadhar");
-				            	textArea.setText(textArea.getText()+data1+"\t"+data2+"\t"+data3+"\t"+data4+"\t"+data5+"\t"+"\n");
+				            	String data4 = rs.getString("doe");String data5 = rs.getString("usr_aadhar");String data6 = rs.getString("T_Date");
+				            	textArea.setText(textArea.getText()+data1+"\t"+data2+"\t"+data3+"\t"+data4+"\t"+data6+"\t"+data5+"\t"+"\n");
 				            } 
 				            conn.close(); 
 			        } 
