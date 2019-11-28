@@ -219,6 +219,7 @@ textArea.setText(" LL_No\tCOV\tDOI\tExp_Date\t T_Date\tUser_aadhar\n");
 		frame.getContentPane().add(btnSubmit);
 
 		JButton btnPrev = new JButton("prev");
+		btnPrev.setBackground(new Color(255, 255, 102));
 		btnPrev.setFont(new Font("Sylfaen", Font.PLAIN, 20));
 		btnPrev.addActionListener(new ActionListener()
 		{
@@ -236,7 +237,7 @@ textArea.setText(" LL_No\tCOV\tDOI\tExp_Date\t T_Date\tUser_aadhar\n");
 		
 		
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic8 - Copy (2).png"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\DL - Copy.png"));
 		lblNewLabel.setBounds(0, 0, 1182, 686);
 		frame.getContentPane().add(lblNewLabel);
 		

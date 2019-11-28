@@ -118,6 +118,7 @@ public class Add_User
 
 		
 		JButton btnPrev = new JButton("prev");
+		btnPrev.setBackground(new Color(255, 255, 102));
 		btnPrev.setIcon(null);
 		btnPrev.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		btnPrev.setBounds(0, 643, 106, 43);
@@ -251,7 +252,7 @@ public class Add_User
 		
 		JLabel lblNewLabel = new JLabel("New label");
 		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 11));
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic8alter.png"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic8alter - Copy.png"));
 		lblNewLabel.setBounds(0, 11, 1182, 686);
 		frame.getContentPane().add(lblNewLabel);
 		

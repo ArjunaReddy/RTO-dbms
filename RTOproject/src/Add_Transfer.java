@@ -199,6 +199,7 @@ public class Add_Transfer
 		frame.getContentPane().add(btnSubmit);
 
 		JButton btnPrev = new JButton("prev");
+		btnPrev.setBackground(new Color(255, 255, 102));
 		btnPrev.setFont(new Font("Sylfaen", Font.PLAIN, 20));
 		btnPrev.addActionListener(new ActionListener()
 		{
@@ -213,7 +214,7 @@ public class Add_Transfer
 		frame.getContentPane().add(btnPrev);
 		
 		JLabel lblNewLabel_1 = new JLabel("New label");
-		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic8alter.png"));
+		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic8alter - Copy.png"));
 		lblNewLabel_1.setBounds(0, -1, 1182, 686);
 		frame.getContentPane().add(lblNewLabel_1);
 

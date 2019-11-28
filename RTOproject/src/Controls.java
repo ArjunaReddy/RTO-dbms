@@ -54,7 +54,7 @@ public class Controls
 		frame.getContentPane().setLayout(null);
 
 		JLabel lblWelcomeAdmin = new JLabel("Welcome Admin");
-		lblWelcomeAdmin.setForeground(Color.WHITE);
+		lblWelcomeAdmin.setForeground(new Color(255, 255, 0));
 		lblWelcomeAdmin.setFont(new Font("Bodoni MT Black", Font.BOLD, 34));
 		lblWelcomeAdmin.setBounds(430, 41, 333, 62);
 		frame.getContentPane().add(lblWelcomeAdmin);
@@ -102,6 +102,8 @@ public class Controls
 		frame.getContentPane().add(btnTransfers);
 
 		JButton btnPrev = new JButton("prev");
+		btnPrev.setBackground(new Color(255, 255, 102));
+		btnPrev.setForeground(new Color(0, 0, 0));
 		btnPrev.setFont(new Font("Sylfaen", Font.PLAIN, 20));
 		btnPrev.addActionListener(new ActionListener()
 		{
@@ -116,7 +118,7 @@ public class Controls
 		frame.getContentPane().add(btnPrev);
 		
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic8alter.png"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic8alter - Copy.png"));
 		lblNewLabel.setBounds(0, 0, 1182, 686);
 		frame.getContentPane().add(lblNewLabel);
 	}

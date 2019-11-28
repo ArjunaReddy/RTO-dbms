@@ -12,6 +12,7 @@ import java.awt.event.ActionEvent;
 import java.awt.Font;
 import javax.swing.JLabel;
 import javax.swing.ImageIcon;
+import java.awt.Color;
 
 public class Users 
 {
@@ -128,6 +129,7 @@ public class Users
 		frame.getContentPane().add(btnLl);
 
 		JButton btnPrev = new JButton("prev");
+		btnPrev.setBackground(new Color(255, 255, 102));
 		btnPrev.setFont(new Font("Sylfaen", Font.PLAIN, 20));
 		btnPrev.addActionListener(new ActionListener()
 		{
@@ -142,7 +144,7 @@ public class Users
 		frame.getContentPane().add(btnPrev);
 		
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic8.png"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic8 - Copy.png"));
 		lblNewLabel.setBounds(0, 0, 1182, 686);
 		frame.getContentPane().add(lblNewLabel);
 	}

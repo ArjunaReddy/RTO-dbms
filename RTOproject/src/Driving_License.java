@@ -180,6 +180,7 @@ public class Driving_License {
 		frame.getContentPane().add(btnSubmit);
 
 		JButton btnPrev = new JButton("prev");
+		btnPrev.setBackground(new Color(255, 255, 102));
 		btnPrev.setFont(new Font("Sylfaen", Font.PLAIN, 20));
 		btnPrev.addActionListener(new ActionListener()
 		{
@@ -251,7 +252,7 @@ public class Driving_License {
 		frame.getContentPane().add(button1);
 		
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\pic8 - Copy (2).png"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\LC\\eclipse-workspace\\RTOproject\\images\\DL - Copy.png"));
 		lblNewLabel.setBounds(0, 11, 1182, 686);
 		frame.getContentPane().add(lblNewLabel);
 	}
